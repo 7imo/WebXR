@@ -9,7 +9,7 @@ Advanced Web Technologies Project - TU Berlin - Fraunhofer FOKUS
 2 DOs:
 - Create Landing Page
 - Evaluate different frameworks
-- Create Prototype for showing 3D Objetcts in AR in Browser
+- Create 4 Prototypes for showing 3D Objetcts in AR in Browser
 - 3D Models Source?
 - Continuous Documentation
 
