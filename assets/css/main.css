@@ -2919,10 +2919,10 @@
 /* Banner */
 
 	#banner {
-		padding: 14em 0 12em 0;
+		padding: 4em 0 30em 3em;
 		background-image: url(../../images/banner.jpg);
 		background-size: cover;
-		background-position: center top;
+		background-position: center bottom;
 		background-repeat: no-repeat;
 		text-align: center;
 	}
@@ -2933,13 +2933,14 @@
 			-ms-transition: opacity 1s ease-in-out, -ms-transform 0.75s ease-in-out;
 			transition: opacity 1s ease-in-out, transform 0.75s ease-in-out;
 			opacity: 1;
+
 		}
 
 		#banner h1 {
 			font-size: 3em;
 			color: #25a2c3;
 			line-height: 1em;
-			margin: 0 0 0.5em 0;
+			margin: 0 0 1em 0;
 			padding: 0;
 		}
 
@@ -3096,6 +3097,8 @@
 
 	#one .image.fit {
 		margin: 0;
+		max-width:35%;
+		height:auto;
 	}
 
 		@media screen and (max-width: 980px) {
