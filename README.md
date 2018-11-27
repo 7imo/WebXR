@@ -1,4 +1,4 @@
-# WebXrEducation
+# WebXR for Automobile
 
 Trello Task Board: https://trello.com/b/jCDaJNfP/web-xr-vr-ar-for-automobile
 
