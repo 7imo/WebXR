@@ -2041,6 +2041,7 @@
 		border: solid 1px #dee1e3;
 		margin-bottom: 2em;
 		overflow: hidden;
+		margin-right: 20px;
 	}
 
 		.box > :last-child,
