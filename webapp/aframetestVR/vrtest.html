@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <!-- libraries: latest A-Frame and environment component for testing -->
+    <script src="https://aframe.io/releases/0.8.0/aframe.min.js"></script>
+    <script src="https://unpkg.com/aframe-environment-component/dist/aframe-environment-component.min.js"></script>
+  </head>
+  <body>
+    <a-scene>
+      <!-- declaration of assets that can be reused in the scene -->
+      <a-assets>
+        <img id="skyTexture" src="images/lothaire-limon-rickandmorty-garage-360-final.jpg">
+
+        <a-asset-item id="spaceship" src="ship/scene.gltf">
+
+        <a-asset-item id="pickle" src="pickle/scene.gltf">
+
+      </a-assets>
+
+      <a-entity gltf-model="#spaceship" position="0 -5 -12" scale="0.03 0.03 0.03">
+        <!-- rotation and flying animation on mouseover for the spaceship -->
+        <a-animation attribute="rotation" dur="10000" to="0 360 0" repeat="indefinite" easing="linear"></a-animation>
+        <a-animation attribute="position" begin="mouseenter" to="0 0 -12" direction="alternate" dur="2000"
+        repeat="1"></a-animation>
+      </a-entity>
+
+      <!-- Pickle Rick is making some backflips onclick -->
+      <a-entity gltf-model="#pickle" position="6 -3 0.6" scale="0.1 0.1 0.1" rotation="0 -90 0">
+        <a-animation attribute="rotation" begin="click" dur="2000" to="360 630 0"></a-animation>
+      </a-entity>
+
+      <!-- Camera -> wasd controls disabled because entities should not weirdly move on the garage background-->
+      <a-entity position="0 -2 0" camera look-controls>
+        <a-camera wasd-controls-enabled="false">
+          <a-cursor color="#fff"></a-cursor>
+        </a-camera>
+      </a-entity>
+
+      <!-- The 360 degree garage picture is actually the sky attribute -->
+      <a-sky src="#skyTexture" rotation="0 230 0"></a-sky>
+      <a-light type="ambient" color="#445451"></a-light>
+      <a-light type="point" intensity="1" position="2 4 4"></a-light>
+    </a-scene>
+  </body>
+</html>
