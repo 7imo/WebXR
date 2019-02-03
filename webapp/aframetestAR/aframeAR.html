@@ -8,9 +8,7 @@
 	<link rel="stylesheet" type="text/css" href="ar.css">
 </head>
   <body>
-  	 <a href="addtocart.html">
   	<button class="button" onclick="buy();">Buy</button>
-  </a>
   	<div class="control color">
   		<button class="arrow right" onclick="nextColor();"></button>
 		<p class="text">Color</p>
@@ -22,14 +20,24 @@
 	</div>
     <a-scene arjs="debugUIEnabled: false;">
     	<a-assets>
-    		<a-asset-item id="beetle" src="models/beetle/scene.gltf"></a-asset-item>
-    		<a-asset-item id="racecar" src="models/racecar/scene.gltf"></a-asset-item>
-    		<a-asset-item id="audi" src="models/audi/scene.gltf"></a-asset-item>
+			<a-asset-item id="citypink" src="models/CityPink/CityCarPink.gltf"></a-asset-item>
+			<a-asset-item id="cityblue" src="models/CityBlue/CityBlue.gltf"></a-asset-item>
+			<a-asset-item id="citygreen" src="models/CityGreen/CityGreen.gltf"></a-asset-item>
+			<a-asset-item id="limoblack" src="models/LimoBlack/LimoBlack.gltf"></a-asset-item>
+			<a-asset-item id="limoblue" src="models/LimoBlue/LimoBlue.gltf"></a-asset-item>
+			<a-asset-item id="limored" src="models/LimoRed/LimoRed.gltf"></a-asset-item>
+			<a-asset-item id="pickupaqua" src="models/PickUpAqua/PickUpAqua.gltf"></a-asset-item>
+    		<a-asset-item id="pickupgreen" src="models/PickUpGreen/PickUpGreen.gltf"></a-asset-item>
+    		<a-asset-item id="pickupwhite" src="models/PickUpWhite/PickUpWhite.gltf"></a-asset-item>
+    		<a-asset-item id="sportblue" src="models/SportBlue/SportBlue.gltf"></a-asset-item>
+    		<a-asset-item id="sportgreen" src="models/SportGreen/SportGreen.gltf"></a-asset-item>
+    		<a-asset-item id="sportorange" src="models/SportOrange/SportOrange.gltf"></a-asset-item>
+    		<a-asset-item id="caravan" src="models/Caravan/Caravan.gltf"></a-asset-item>
   		</a-assets>
 
   		<a-marker preset="hiro">
   			<a-entity>
-  				<a-gltf-model src="#beetle">
+  				<a-gltf-model scale="75 75 75" src="#citypink">
   				<a-animation attribute="rotation"
 	               dur="30000"
 	               fill="forwards"
